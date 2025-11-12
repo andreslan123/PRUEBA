@@ -1,0 +1,189 @@
+﻿<Window x:Class="GESTION_TIENDA_VIRTUALwpfPROGRAMII.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GESTION_TIENDA_VIRTUALwpfPROGRAMII"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/imagenes/fondoArbol.jpg"></ImageBrush>
+
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            
+
+        </Grid.RowDefinitions>
+        <Label x:Name="lblTitulo"
+                HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               Content="GESTION TIENDA VIRTUAL"
+               FontSize="30"
+               FontWeight="Bold"
+               Foreground="White">
+               
+        </Label>
+        <StackPanel Grid.Row="1" 
+                    Orientation="Horizontal" 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Label x:Name="lblCliente"
+           FontWeight="Bold"
+           FontSize="30"
+           Content="CLIENTE:" 
+           VerticalAlignment="Center" 
+                   Foreground="White"/>
+
+            <TextBox x:Name="txtCliente"
+             FontSize="30"
+             Margin="8,0,0,0"
+             Width="250"
+             VerticalAlignment="Center"/>
+        </StackPanel>
+        <DataGrid x:Name="lstBEmpleados"
+                 Grid.Row="2"
+                 Grid.ColumnSpan="2"
+                 Opacity="0.7"
+                 Margin="0,0,0,10"
+                 AutoGenerateColumns="False">
+        </DataGrid>
+
+        <StackPanel Grid.Row="3" 
+            Orientation="Horizontal" 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center">
+
+            <Button x:Name="btnAgregarCli"
+            Margin="20"
+            Content="Agregar Cliente"
+            Width="150"
+            Height="80"
+            FontSize="17"
+            Padding="10"
+            FontWeight="Bold"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+
+            <Button x:Name="btnBorrarCliente"
+            Margin="20"
+            Content="Borrar Cliente"
+            Width="150"
+            Height="80"
+            FontSize="18"
+            Padding="10"
+            FontWeight="Bold"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+
+            <Button x:Name="btnBuscarCliente"
+            Margin="20"
+            Content="Buscar Cliente"
+            Width="150"
+            Height="80"
+            FontSize="18"
+            Padding="10"
+            FontWeight="Bold"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="4" 
+                    Orientation="Horizontal" 
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Label x:Name="lblProducto"
+           FontWeight="Bold"
+           FontSize="30"
+           Content="PRODUCTO:" 
+           VerticalAlignment="Center"
+           Foreground="White"/>
+
+            <TextBox x:Name="txtProducto"
+             FontSize="30"
+             Margin="8,0,0,0"
+             Width="250"
+             VerticalAlignment="Center"/>
+        </StackPanel>
+        <DataGrid x:Name="lstGrin"
+                 Grid.Row="5"
+                 Grid.ColumnSpan="2"
+                 Opacity="0.7"
+                 Margin="0,0,0,10"
+                 AutoGenerateColumns="False">
+            
+        </DataGrid>
+        <StackPanel Grid.Row="6" 
+            Orientation="Horizontal" 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" Margin="106,0,0,0" Width="486">
+
+            <Button x:Name="btnAgregarProducto"
+            Margin="20"
+            Content="Agregar Cliente"
+            Width="150"
+            Height="80"
+            FontSize="17"
+            Padding="10"
+            FontWeight="Bold"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+
+            <Button x:Name="btnBorrarProducto"
+            Margin="20"
+            Content="Borrar Cliente"
+            Width="150"
+            Height="80"
+            FontSize="18"
+            Padding="10"
+            FontWeight="Bold"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+            
+        </StackPanel>
+        <StackPanel Grid.Row="7" 
+            Orientation="Horizontal" 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center">
+
+            <Button x:Name="btnCargarProducto"
+            Margin="20"
+            Content="Agregar Cliente"
+            Width="150"
+            Height="80"
+            FontSize="17"
+            Padding="10"
+            FontWeight="Bold"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+
+            <Button x:Name="btnGrabarArchivo"
+            Margin="20"
+            Content="Borrar Cliente"
+            Width="150"
+            Height="80"
+            FontSize="18"
+            Padding="10"
+            FontWeight="Bold"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+
+        </StackPanel>
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>
